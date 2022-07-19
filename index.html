@@ -5,13 +5,52 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zach Lucas' Code Quiz!</title>
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/reset.css">
+        <link rel="stylesheet" href="./assets/style.css">
     </head>
     <body>
-    
+        <!-- Contains button to access high scores as well as timer display-->
+        <header>
+            <button id = "scoreBoardButton"> Hiscores</button>
+            <p id = "timer">0 Seconds Remaining</p>
+        </header>
+        <!-- Landing page screen. Gives a button to start game-->
+        <div id = "startPage">
+            <h1>Code Pop Quiz!</h1>
+            <h2>Click the button to start a multiple choice quiz for coding!</h2>
+            <button id="startGame">Begin the Game!</button>
+        </div>
+        <!-- Section created for local high scores-->
+        <section id = "scoreboard">
+            <ul id ='scoreList'><h2>Player Scores:</h2>
+            
+            </ul>
+            <div class = "scoreNav">
+                <button id = 'clearScores'> Clear Scores</button>
+                <button id = 'leaveScores'> Leave Scoreboard</button>
+            </div>
+        </section>
+        <!-- Section created for quiz when it is started-->
+        <article id = "quizArea">
+            <ul><h2 id = "question"></h2>
+                <li>
+                    <button id = "a1"></button>
+                </li>
+                <li>
+                    <button id = "a2"></button>
+                </li>
+                <li>
+                    <button id = "a3"></button>
+                </li>
+                <li>
+                    <button id = "a4"></button>
+                </li>
+            </ul>
+            <div id = 'choiceResponse'></div>
+        </article>
 
 
-        <script src="script.js"></script>
+
+        <script src="./assets/script.js"></script>
     </body>
 </html>
